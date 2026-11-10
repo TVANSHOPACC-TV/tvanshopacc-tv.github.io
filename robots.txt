@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://tvanshopacc-tv.github.io/sitemap.xml
