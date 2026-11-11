@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <!-- Chống lưu cache trên Zalo Webview và mọi trình duyệt -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- TÍCH HỢP GOOGLE SEARCH CONSOLE & TỐI ƯU SEO LÊN TOP TÌM KIẾM -->
+  <meta name="google-site-verification" id="meta-gsc" content="lm5CKxsWr0d1Xjv69MtylNAEFMb1JYVwEdgAHbRN1zs" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="description" id="meta-desc" content="Trọng Văn Shop Acc - Kho Acc Liên Quân Mobile, Free Fire, Blox Fruits uy tín, trắng thông tin 100%, giá rẻ, giao dịch tự động 1s qua Zalo 0346633408." />
+  <meta name="keywords" id="meta-keys" content="Trọng Văn Shop Acc, shop acc trọng văn, mua acc liên quân, shop acc blox fruits, shop acc free fire uy tín, 0346633408" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" id="og-title" content="Trọng Văn Shop Acc - Kho Acc Game Uy Tín & Đánh Giá Khách Hàng" />
+  <meta property="og:description" content="Cập nhật kho acc game mới nhất theo thời gian thực. Ảnh độ phân giải gốc siêu nét, bảo hành uy tín 100%." />
+
+  <title id="page-title">Trọng Văn Shop Acc - Kho Acc Game Uy Tín 24/7</title>
+
+  <!-- Dữ liệu có cấu trúc giúp Google ưu tiên xếp hạng đầu tìm kiếm -->
+  <script type="application/ld+json" id="schema-seo">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Trọng Văn Shop Acc",
+    "telephone": "0346633408",
+    "description": "Hệ thống cung cấp tài khoản Liên Quân, Free Fire, Roblox Blox Fruits trắng thông tin uy tín.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "1428"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #060b17;
+      --bg-bar: #091122;
+      --bg-card: #0c162c;
+      --cyan: #00e5ff;
+      --cyan-bright: #18ffff;
+      --amber: #f59e0b;
+      --amber-bright: #fbbf24;
+      --green: #10b981;
+      --text-main: #ffffff;
+      --text-sub: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ================= 1. INTRO 3S ĐẦU TRANG ================= */
+    #intro-screen {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at center, #0d1b38 0%, #040710 100%);
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.45s ease, visibility 0.45s ease;
+    }
+
+    #intro-screen.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    #intro-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.45;
+      display: none;
+    }
+
+    .intro-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      animation: pop3D 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes pop3D {
+      0% { transform: scale(0.75) translateY(20px); opacity: 0; }
+      25% { transform: scale(1) translateY(0); opacity: 1; }
+      85% { transform: scale(1.03); opacity: 1; }
+      100% { transform: scale(1.15); opacity: 0; }
+    }
+
+    .intro-logo-box {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px;
+      border-radius: 16px;
+      background: rgba(0, 229, 255, 0.12);
+      border: 2px solid var(--cyan);
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      box-shadow: 0 0 28px rgba(0, 229, 255, 0.45);
+    }
+
+    .intro-progress {
+      width: 220px;
+      height: 4px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 99px;
+      margin: 18px auto 0;
+      overflow: hidden;
+    }
+
+    .intro-progress::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--cyan), var(--amber-bright));
+      animation: fillProgress 2.8s linear forwards;
+    }
+
+    @keyframes fillProgress {
+      to { width: 100%; }
+    }
+
+    /* ================= 2. THANH LIVE 24/7 ================= */
+    .top-live-bar {
+      background: #040812;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 6px 2.5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      gap: 10px;
+    }
+
+    .live-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .live-badge {
+      background: rgba(0, 229, 255, 0.15);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-weight: 800;
+      font-size: 0.68rem;
+      padding: 2px 8px;
+      border-radius: 99px;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .live-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 6px var(--cyan);
+    }
+
+    .ticker-viewport {
+      overflow: hidden;
+      white-space: nowrap;
+      flex: 1;
+    }
+
+    .ticker-track {
+      display: inline-block;
+      color: #cbd5e1;
+      animation: tickerMove 20s linear infinite;
+    }
+
+    @keyframes tickerMove {
+      0% { transform: translateX(10%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .live-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    /* ================= 3. HEADER LOGO & QUẢN TRỊ ================= */
+    .header-bar {
+      background: var(--bg-bar);
+      padding: 12px 3.5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .crown-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      background: rgba(0, 229, 255, 0.08);
+      border: 1.5px solid var(--cyan);
+      display: grid;
+      place-items: center;
+      font-size: 1.3rem;
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.25);
+    }
+
+    .brand-title-line {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .brand-main-name {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+
+    .brand-yellow-tag {
+      background: linear-gradient(135deg, #fbbf24, #d97706);
+      color: #000;
+      font-size: 0.65rem;
+      font-weight: 900;
+      padding: 3px 7px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+
+    .brand-sub-domain {
+      font-size: 0.72rem;
+      color: var(--cyan);
+      margin-top: 2px;
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .btn-zalo-top {
+      background: linear-gradient(135deg, #00e5ff, #0284c7);
+      color: #001219;
+      font-weight: 900;
+      font-size: 0.8rem;
+      padding: 8px 14px;
+      border-radius: 9px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-adm-open {
+      background: rgba(0, 229, 255, 0.12);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-weight: 800;
+      font-size: 0.78rem;
+      padding: 8px 12px;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+
+    /* ================= 4. MENU CHỈ ĐỂ LẠI KHO ACC & ĐÁNH GIÁ ================= */
+    .menu-tabs {
+      background: #070d1c;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 8px 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .tab-link {
+      color: var(--text-sub);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 20px 11px;
+      border-bottom: 2.5px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-link.active, .tab-link:hover {
+      color: var(--cyan);
+      border-bottom-color: var(--cyan);
+    }
+
+    /* ================= 5. BANNER & KHO ACC NHIỀU ẢNH ================= */
+    .wrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 18px 3% 65px;
+    }
+
+    .hero-banner-box {
+      position: relative;
+      border-radius: 20px;
+      background: radial-gradient(circle at 78% 35%, rgba(0, 153, 255, 0.28) 0%, rgba(9, 19, 40, 0.96) 65%);
+      border: 1.5px solid var(--cyan);
+      box-shadow: 0 0 32px rgba(0, 229, 255, 0.16), inset 0 0 22px rgba(0, 229, 255, 0.08);
+      padding: 24px 26px;
+      overflow: hidden;
+    }
+
+    .dragon-art {
+      position: absolute;
+      right: 22px;
+      top: 12px;
+      width: 210px;
+      height: 210px;
+      opacity: 0.85;
+      pointer-events: none;
+      filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.4));
+    }
+
+    @media (max-width: 720px) {
+      .dragon-art {
+        opacity: 0.2;
+        right: -25px;
+      }
+    }
+
+    .top-pills-row {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 12px;
+    }
+
+    .pill-auto {
+      background: var(--cyan);
+      color: #001219;
+      font-weight: 900;
+      font-size: 0.68rem;
+      padding: 4px 11px;
+      border-radius: 99px;
+      text-transform: uppercase;
+    }
+
+    .pill-sync {
+      background: rgba(16, 185, 129, 0.16);
+      border: 1px solid var(--green);
+      color: #34d399;
+      font-weight: 700;
+      font-size: 0.68rem;
+      padding: 4px 11px;
+      border-radius: 99px;
+    }
+
+    .hero-main-title {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(1.5rem, 3.6vw, 2.25rem);
+      font-weight: 900;
+      line-height: 1.18;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero-main-title span {
+      display: block;
+      color: var(--cyan);
+      text-shadow: 0 0 18px rgba(0, 229, 255, 0.45);
+    }
+
+    .hero-paragraph {
+      position: relative;
+      z-index: 2;
+      max-width: 610px;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+
+    .commit-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 780px) {
+      .commit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .commit-card {
+      background: rgba(5, 11, 24, 0.85);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 11px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .commit-card .c-title {
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .commit-card .c-sub {
+      font-size: 0.66rem;
+      color: var(--text-sub);
+    }
+
+    .hero-action-row {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn-explore {
+      background: var(--cyan);
+      color: #02131d;
+      font-weight: 900;
+      font-size: 0.82rem;
+      padding: 11px 18px;
+      border-radius: 11px;
+      text-decoration: none;
+      box-shadow: 0 0 22px rgba(0, 229, 255, 0.45);
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-lucky {
+      background: #1d4ed8;
+      border: 1px solid #3b82f6;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 11px 18px;
+      border-radius: 11px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    /* KHO ACC & SLIDER NHIỀU ẢNH */
+    .sec-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 26px 0 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .sec-title {
+      font-size: 1.1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sec-title::before {
+      content: "";
+      width: 5px;
+      height: 18px;
+      background: var(--cyan);
+      border-radius: 4px;
+      box-shadow: 0 0 8px var(--cyan);
+    }
+
+    .accounts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 18px;
+    }
+
+    .acc-item {
+      background: var(--bg-card);
+      border: 1px solid rgba(0, 229, 255, 0.22);
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .acc-item:hover {
+      transform: translateY(-4px);
+      border-color: var(--cyan);
+      box-shadow: 0 10px 25px rgba(0, 229, 255, 0.16);
+    }
+
+    .acc-thumb {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9.5;
+      background: #040811;
+      overflow: hidden;
+    }
+
+    .acc-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: zoom-in;
+      image-rendering: -webkit-optimize-contrast;
+      transition: transform 0.35s ease;
+    }
+
+    .acc-item:hover .acc-thumb img {
+      transform: scale(1.03);
+    }
+
+    .badge-new-acc {
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      background: var(--cyan);
+      color: #000;
+      font-size: 0.65rem;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 5px;
+      pointer-events: none;
+    }
+
+    .badge-img-count {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      background: rgba(0, 0, 0, 0.78);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+
+    .badge-fullscreen {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      font-size: 0.66rem;
+      padding: 3px 8px;
+      border-radius: 5px;
+      border: 1px solid rgba(255,255,255,0.2);
+      pointer-events: none;
+    }
+
+    .slide-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(4, 9, 20, 0.8);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-weight: 900;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      z-index: 4;
+    }
+
+    .slide-nav-btn.prev { left: 8px; }
+    .slide-nav-btn.next { right: 8px; }
+
+    .acc-mini-thumbs {
+      display: flex;
+      gap: 6px;
+      padding: 8px 12px 0;
+      overflow-x: auto;
+    }
+
+    .acc-mini-thumbs img {
+      width: 44px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      opacity: 0.65;
+      flex-shrink: 0;
+    }
+
+    .acc-mini-thumbs img.active {
+      border-color: var(--cyan);
+      opacity: 1;
+    }
+
+    .acc-info {
+      padding: 14px 15px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .acc-name {
+      font-size: 0.98rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .acc-detail {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      line-height: 1.45;
+      margin-bottom: 14px;
+      flex: 1;
+      white-space: pre-line;
+    }
+
+    .acc-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 11px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .acc-cost {
+      font-size: 1.12rem;
+      font-weight: 900;
+      color: var(--amber-bright);
+    }
+
+    .btn-zalo-buy {
+      background: linear-gradient(135deg, var(--cyan), #0284c7);
+      color: #00111a;
+      font-weight: 900;
+      font-size: 0.78rem;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    /* ĐÁNH GIÁ KHÁCH HÀNG */
+    .review-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 780px) {
+      .review-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card-panel {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .inp-group {
+      margin-bottom: 10px;
+    }
+
+    .inp-group label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .inp-box {
+      width: 100%;
+      padding: 9px 11px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: #060b17;
+      color: #fff;
+      font-size: 0.84rem;
+      outline: none;
+    }
+
+    .rev-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 9px;
+      padding: 10px 12px;
+      margin-bottom: 9px;
+    }
+
+    /* LIGHTBOX FULL SCREEN HỖ TRỢ DUYỆT NHIỀU ẢNH */
+    #lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 5, 12, 0.96);
+      z-index: 99995;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 14px;
+    }
+
+    #lightbox-modal.open {
+      display: flex;
+    }
+
+    #lightbox-modal img {
+      max-width: 95vw;
+      max-height: 82vh;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 229, 255, 0.35);
+    }
+
+    .lb-controls {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    /* MODAL ADMIN */
+    #adm-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 6, 15, 0.94);
+      backdrop-filter: blur(8px);
+      z-index: 99990;
+      display: none;
+      overflow-y: auto;
+      padding: 18px 3%;
+    }
+
+    #adm-overlay.open {
+      display: block;
+    }
+
+    .adm-container {
+      max-width: 1020px;
+      margin: 0 auto;
+      background: #0a1326;
+      border: 1.5px solid var(--cyan);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .adm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 780px) {
+      .adm-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .preview-upload-strip {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .preview-upload-strip img {
+      width: 52px;
+      height: 38px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid var(--cyan);
+    }
+
+    .zalo-float-btn {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      z-index: 900;
+      background: linear-gradient(135deg, #0068ff, #00c6ff);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 10px 16px;
+      border-radius: 99px;
+      box-shadow: 0 6px 20px rgba(0, 104, 255, 0.5);
+    }
+
+    #msg-toast {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #0e1b36;
+      border: 1px solid var(--cyan);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 9px;
+      font-size: 0.82rem;
+      z-index: 100000;
+      display: none;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INTRO 3 GIÂY MỞ ĐẦU (HỖ TRỢ VIDEO TỪ TỆP HOẶC LINK) -->
+  <div id="intro-screen" onclick="this.classList.add('hide')" title="Chạm để vào nhanh">
+    <video id="intro-video" autoplay muted playsinline></video>
+    <div class="intro-content">
+      <div class="intro-logo-box">👑</div>
+      <h1 style="font-size: 2.1rem; font-weight: 900; letter-spacing: 1.5px;">
+        <span id="intro-title-txt">TRỌNG VĂN</span>
+        <span style="background: var(--amber); color:#000; font-size: 0.45em; padding: 3px 8px; border-radius: 5px; vertical-align: middle;">SHOP ACC</span>
+      </h1>
+      <p style="color: var(--cyan); font-size: 0.82rem; margin-top: 6px; letter-spacing: 1.5px;">
+        CHỦ SHOP: TRỌNG VĂN • ZALO: 0346633408
+      </p>
+      <div class="intro-progress"></div>
+    </div>
+  </div>
+
+  <!-- THANH LIVE 24/7 -->
+  <div class="top-live-bar">
+    <div class="live-left">
+      <span class="live-badge">LIVE 24/7</span>
+      <div class="ticker-viewport">
+        <div class="ticker-track">
+          🔥 Cập nhật Kho Acc mới theo thời gian thực 1 giây! &nbsp;&nbsp;•&nbsp;&nbsp; ⚡ Chạm vào ảnh Acc để lướt xem nhiều hình Full HD siêu nét &nbsp;&nbsp;•&nbsp;&nbsp; 💬 Giao dịch trực tiếp qua Zalo Trọng Văn: <strong>0346633408</strong>
+        </div>
+      </div>
+    </div>
+    <div class="live-right">
+      <span>📞 Zalo: <strong id="top-phone">0346633408</strong></span>
+      <span style="color: var(--green);">🛡️ Bảo hành 100%</span>
+    </div>
+  </div>
+
+  <!-- HEADER CHÍNH -->
+  <header class="header-bar">
+    <div class="brand-wrap">
+      <div class="crown-icon">👑</div>
+      <div>
+        <div class="brand-title-line">
+          <span class="brand-main-name" id="header-name">TRỌNG VĂN</span>
+          <span class="brand-yellow-tag">SHOP ACC</span>
+        </div>
+        <div class="brand-sub-domain">trongvanshopacc.net • Zalo: <span id="sub-phone">0346633408</span></div>
+      </div>
+    </div>
+
+    <div class="header-right-tools">
+      <a id="top-zalo-btn" href="https://zalo.me/0346633408" target="_blank" class="btn-zalo-top">
+        💬 Chat Zalo Mua Acc
+      </a>
+      <button class="btn-adm-open" onclick="openAdmin()">⚙️ Admin</button>
+    </div>
+  </header>
+
+  <!-- THANH ĐIỀU HƯỚNG CHỈ GIỮ LẠI KHO ACC & ĐÁNH GIÁ -->
+  <nav class="menu-tabs">
+    <a href="#kho-acc-sec" class="tab-link active" id="nav-kho" onclick="switchNav('kho')">
+      <span>🎮</span><span>KHO ACC MỚI NHẤT</span>
+    </a>
+    <a href="#review-sec" class="tab-link" id="nav-rev" onclick="switchNav('rev')">
+      <span>⭐</span><span>ĐÁNH GIÁ UY TÍN</span>
+    </a>
+  </nav>
+
+  <!-- NỘI DUNG CHÍNH -->
+  <main class="wrapper">
+    <section class="hero-banner-box">
+      <svg class="dragon-art" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M145 28C122 25 102 38 95 58C82 48 60 52 48 68C70 66 86 78 90 95C72 96 58 112 60 132C78 122 98 126 112 142C102 158 78 165 52 160C82 182 128 178 152 150C172 126 168 88 142 72C158 64 168 45 145 28Z" fill="url(#dGrad)"/>
+        <defs>
+          <linearGradient id="dGrad" x1="40" y1="25" x2="170" y2="175" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00e5ff"/>
+            <stop offset="1" stop-color="#0284c7" stop-opacity="0.35"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="top-pills-row">
+        <span class="pill-auto">⚡ ĐỒNG BỘ LÊN WEB SAU 1 GIÂY</span>
+        <span class="pill-sync">🔍 Chuẩn Google Search Console</span>
+      </div>
+
+      <h2 class="hero-main-title">
+        SHOP ACC GAME UY TÍN
+        <span id="banner-shop-name">TRỌNG VĂN SHOP ACC</span>
+      </h2>
+
+      <p class="hero-paragraph">
+        Chuyên cung cấp tài khoản <strong>Liên Quân Mobile, Free Fire, Roblox Blox Fruits</strong> chuẩn trắng thông tin. Xem nhiều ảnh chi tiết trên từng Acc và liên hệ Zalo nhận tài khoản ngay!
+      </p>
+
+      <div class="commit-grid">
+        <div class="commit-card"><span>⚡</span><div><div class="c-title">Giao Acc 1s</div><div class="c-sub">Hỗ trợ 24/7</div></div></div>
+        <div class="commit-card"><span>🛡️</span><div><div class="c-title">Bảo Hành</div><div class="c-sub">Uy tín 100%</div></div></div>
+        <div class="commit-card"><span>🖼️</span><div><div class="c-title">Nhiều Ảnh HD</div><div class="c-sub">Rõ nét từng góc</div></div></div>
+        <div class="commit-card"><span>✅</span><div><div class="c-title">Trắng TT</div><div class="c-sub">Đổi MK ngay</div></div></div>
+      </div>
+
+      <div class="hero-action-row">
+        <div class="hero-btns">
+          <a href="#kho-acc-sec" class="btn-explore">🛒 XEM KHO ACC NGAY</a>
+          <a id="banner-zalo-btn" href="https://zalo.me/0346633408" target="_blank" class="btn-lucky">💬 ZALO TRỌNG VĂN: 0346633408</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. CHỨC NĂNG KHO ACC (HỖ TRỢ 1 VÀ NHIỀU ẢNH) -->
+    <div class="sec-head" id="kho-acc-sec">
+      <div class="sec-title">KHO ACC ĐANG BÁN (HỖ TRỢ LƯỚT XEM NHIỀU ẢNH)</div>
+      <span style="font-size: 0.75rem; color: var(--cyan);">⚡ Tự động cập nhật trực tiếp cho mọi người xem</span>
+    </div>
+    <div class="accounts-grid" id="acc-grid-box"></div>
+
+    <!-- 2. CHỨC NĂNG ĐÁNH GIÁ KHÁCH HÀNG -->
+    <div class="sec-head" id="review-sec" style="margin-top: 38px;">
+      <div class="sec-title">ĐÁNH GIÁ UY TÍN TỪ KHÁCH HÀNG</div>
+    </div>
+    <div class="review-layout">
+      <div class="card-panel">
+        <h4 style="color: var(--cyan); margin-bottom: 8px;">✍️ Gửi Đánh Giá Của Bạn</h4>
+        <p style="font-size: 0.76rem; color: var(--text-sub); margin-bottom: 12px;">
+          Đánh giá của bạn sẽ hiển thị lên web sau khi được Admin Trọng Văn phê duyệt.
+        </p>
+        <div class="inp-group"><label>Tên khách hàng</label><input type="text" id="cus-name" class="inp-box" placeholder="VD: Minh Quân - 098xxx" /></div>
+        <div class="inp-group">
+          <label>Mức độ hài lòng</label>
+          <select id="cus-stars" class="inp-box">
+            <option value="5">⭐⭐⭐⭐⭐ (5 Sao - Cực Kỳ Uy Tín)</option>
+            <option value="4">⭐⭐⭐⭐ (4 Sao - Hài Lòng)</option>
+            <option value="3">⭐⭐⭐ (3 Sao - Ổn)</option>
+          </select>
+        </div>
+        <div class="inp-group"><label>Nội dung nhận xét</label><textarea id="cus-text" rows="2" class="inp-box" placeholder="Acc đúng như hình, giao dịch nhanh..."></textarea></div>
+        <button class="btn-explore" style="width:100%; justify-content:center;" onclick="sendReview()">Gửi Đánh Giá Lên Shop</button>
+      </div>
+
+      <div class="card-panel">
+        <h4 style="color: var(--amber-bright); margin-bottom: 10px;">🌟 Nhận Xét Đã Duyệt</h4>
+        <div id="approved-reviews-box"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- XEM ẢNH FULL SCREEN (CÓ NÚT QUA LẠI NHIỀU ẢNH) -->
+  <div id="lightbox-modal" onclick="if(event.target.id==='lightbox-modal') closeFullImg()">
+    <img id="lightbox-target" src="" alt="Full Screen HD" />
+    <div class="lb-controls">
+      <button class="btn-adm-open" onclick="stepLightbox(-1)">❮ Ảnh trước</button>
+      <span id="lightbox-counter" style="font-size:0.85rem; font-weight:800; color:var(--cyan);">1 / 1</span>
+      <button class="btn-adm-open" onclick="stepLightbox(1)">Ảnh sau ❯</button>
+      <button class="btn-adm-open" style="border-color:#ef4444; color:#ef4444;" onclick="closeFullImg()">Đóng ✕</button>
+    </div>
+  </div>
+
+  <!-- NÚT ZALO NỔI -->
+  <a id="float-zalo" href="https://zalo.me/0346633408" target="_blank" class="zalo-float-btn">💬 Zalo Trọng Văn: 0346633408</a>
+
+  <!-- BẢNG QUẢN TRỊ ADMIN (BẢO MẬT RIÊNG) -->
+  <div id="adm-overlay">
+    <div class="adm-container">
+      <div id="adm-login-step">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 14px;">
+          <h3>🔐 ĐĂNG NHẬP QUẢN TRỊ VIÊN</h3>
+          <button class="btn-adm-open" onclick="closeAdmin()">Đóng ✕</button>
+        </div>
+        <div class="inp-group">
+          <label>Nhập mật khẩu Admin:</label>
+          <input type="password" id="adm-pw" class="inp-box" placeholder="Nhập mật khẩu quản trị..." onkeydown="if(event.key==='Enter') verifyAdmin()" />
+        </div>
+        <button class="btn-explore" onclick="verifyAdmin()">Mở Bảng Quản Trị</button>
+      </div>
+
+      <div id="adm-main-step" style="display:none;">
+        <div style="background:rgba(0,229,255,0.1); border:1px solid var(--cyan); border-radius:12px; padding:14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h3 style="color: var(--cyan);">👑 Quản Trị Viên: Trọng Văn (Zalo: 0346633408)</h3>
+            <p style="font-size: 0.76rem; color: #34d399;" id="sync-status-line">⚡ Chế độ Tự Động Đẩy GitHub 1s: BẬT (Mọi người vào web thấy ngay)</p>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="btn-explore" onclick="pushGitHub(false)">🚀 Đồng Bộ Ngay Lên GitHub</button>
+            <button class="btn-adm-open" style="border-color:#f59e0b; color:#fbbf24;" onclick="logoutAdmin()">🔒 Khóa Admin</button>
+            <button class="btn-adm-open" onclick="closeAdmin()">Đóng ✕</button>
+          </div>
+        </div>
+
+        <div class="adm-grid">
+          <!-- CỘT TRÁI: ĐĂNG ACC NHIỀU ẢNH + TẠO TOKEN GITHUB TỰ ĐỘNG -->
+          <div class="card-panel">
+            <h4 style="color: var(--cyan); margin-bottom: 10px;">1. Đăng Acc Mới (Chọn 1 hoặc Nhiều Ảnh)</h4>
+            <div class="inp-group"><label>Tên Acc / Mã Số</label><input type="text" id="adm-acc-name" class="inp-box" placeholder="VD: Acc Liên Quân VIP #01 - Full Skin" /></div>
+            <div class="inp-group"><label>Giá Bán</label><input type="text" id="adm-acc-price" class="inp-box" placeholder="VD: 350.000đ" /></div>
+            <div class="inp-group">
+              <label>Chọn 1 hoặc Nhiều Ảnh từ máy (Giữ nguyên độ nét gốc)</label>
+              <input type="file" id="adm-acc-file" class="inp-box" accept="image/*" multiple onchange="previewSelectedImages(this)" style="margin-bottom:6px;" />
+              <div id="adm-img-preview" class="preview-upload-strip"></div>
+              <input type="text" id="adm-acc-url" class="inp-box" style="margin-top:6px;" placeholder="Hoặc dán 1 hay nhiều Link ảnh (cách nhau dấu phẩy)..." />
+            </div>
+            <div class="inp-group"><label>Mô tả chi tiết Acc</label><textarea id="adm-acc-desc" rows="2" class="inp-box" placeholder="Trắng thông tin, full tướng..."></textarea></div>
+            <button class="btn-explore" style="width:100%; justify-content:center;" onclick="createAcc()">➕ Đăng Acc &amp; Tự Đẩy Lên Web (1s)</button>
+
+            <hr style="border:none; border-top:1px solid rgba(255,255,255,0.08); margin: 15px 0;" />
+
+            <h4 style="color: var(--amber-bright); margin-bottom: 8px;">2. Tạo &amp; Kết Nối GitHub Token Tự Động (1s)</h4>
+            <p style="font-size: 0.73rem; color: var(--text-sub); margin-bottom: 8px;">
+              Bấm nút bên dưới để mở trang tạo mã Token GitHub tự động tích sẵn quyền <code>repo</code>, sau đó dán mã vào ô dưới. Khi bạn bấm đăng Acc, web sẽ tự động cập nhật ngay lập tức cho tất cả mọi người xem!
+            </p>
+            <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
+              <a href="https://github.com/settings/tokens/new?description=TrongVanShopAcc_AutoSync&scopes=repo" target="_blank" class="btn-adm-open" style="text-decoration:none; background:rgba(245,158,11,0.15); border-color:var(--amber); color:var(--amber-bright);">
+                🔑 1-Click Tạo Token GitHub Tự Động
+              </a>
+              <button class="btn-adm-open" onclick="autoDetectGithubRepo()">🔍 Tự Nhận Diện Repo</button>
+            </div>
+            <div class="inp-group"><label>Mã GitHub Token (ghp_...)</label><input type="password" id="gh-token" class="inp-box" placeholder="Dán mã Token vừa tạo vào đây..." onchange="saveGithubCreds()" /></div>
+            <div class="inp-group"><label>Tên Repository (VD: trongvan/shop-acc)</label><input type="text" id="gh-repo" class="inp-box" placeholder="username/ten-repo" onchange="saveGithubCreds()" /></div>
+
+            <hr style="border:none; border-top:1px solid rgba(255,255,255,0.08); margin: 15px 0;" />
+
+            <h4 style="color: var(--cyan); margin-bottom: 8px;">🔐 Đổi Mật Khẩu Admin (Chỉ Mình Bạn Biết)</h4>
+            <p style="font-size: 0.73rem; color: var(--text-sub); margin-bottom: 8px;">
+              Mật khẩu mới được mã hóa một chiều (không ai xem trộm được trong code).
+            </p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px;">
+              <div class="inp-group" style="margin-bottom:0;">
+                <label>Mật khẩu mới</label>
+                <input type="password" id="adm-new-pw" class="inp-box" placeholder="Nhập mật khẩu mới..." />
+              </div>
+              <div class="inp-group" style="margin-bottom:0;">
+                <label>Nhập lại mật khẩu mới</label>
+                <input type="password" id="adm-confirm-pw" class="inp-box" placeholder="Xác nhận mật khẩu..." onkeydown="if(event.key==='Enter') changeAdminPassword()" />
+              </div>
+            </div>
+            <button class="btn-adm-open" style="width:100%; border-color:var(--amber); color:var(--amber-bright);" onclick="changeAdminPassword()">🔑 Lưu Mật Khẩu Admin Mới</button>
+          </div>
+
+          <!-- CỘT PHẢI: VIDEO INTRO TỪ TỆP + GOOGLE SEARCH CONSOLE + DUYỆT ĐÁNH GIÁ -->
+          <div class="card-panel">
+            <h4 style="color: var(--cyan); margin-bottom: 8px;">3. Video Intro (Chọn Từ Tệp) &amp; Google Console SEO</h4>
+            <div class="inp-group"><label>Tên Shop &amp; SĐT Zalo</label>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+                <input type="text" id="adm-cfg-name" class="inp-box" placeholder="Tên Shop" />
+                <input type="text" id="adm-cfg-phone" class="inp-box" placeholder="SĐT Zalo" />
+              </div>
+            </div>
+
+            <div class="inp-group">
+              <label>🎬 Chọn Video Intro 3s từ tệp máy hoặc dán Link MP4</label>
+              <input type="file" id="adm-cfg-video-file" class="inp-box" accept="video/mp4,video/webm,video/*" style="margin-bottom:6px;" />
+              <input type="text" id="adm-cfg-video" class="inp-box" placeholder="Hoặc dán link video MP4..." />
+            </div>
+
+            <div class="inp-group">
+              <label>🔍 Mã Google Search Console (Ưu tiên đưa web lên đầu tìm kiếm)</label>
+              <input type="text" id="adm-cfg-gsc" class="inp-box" placeholder="Mã google-site-verification..." />
+            </div>
+            <div class="inp-group">
+              <label>Từ khóa SEO ưu tiên Top 1 Google</label>
+              <input type="text" id="adm-cfg-seo" class="inp-box" placeholder="Trọng Văn Shop Acc, mua acc liên quân, shop acc uy tín..." />
+            </div>
+
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom: 14px;">
+              <button class="btn-explore" onclick="updateShopCfg()">💾 Lưu Cài Đặt &amp; Đồng Bộ</button>
+              <a href="https://search.google.com/search-console" target="_blank" class="btn-adm-open" style="text-decoration:none;">🌐 Mở Google Console</a>
+            </div>
+
+            <h4 style="color: var(--amber-bright); margin-bottom: 8px;">4. Duyệt Đánh Giá Khách Hàng</h4>
+            <div id="adm-rev-list" style="max-height: 135px; overflow-y: auto; margin-bottom: 12px;"></div>
+
+            <h4 style="color: var(--cyan); margin-bottom: 8px;">5. Quản Lý / Xóa Acc Đang Đăng</h4>
+            <div id="adm-acc-list" style="max-height: 145px; overflow-y: auto;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="msg-toast"></div>
+
+  <script>
+    const DEFAULT_DB = {
+      updatedAt: Date.now(),
+      config: {
+        shopName: "TRỌNG VĂN",
+        zaloPhone: "0346633408",
+        introVideoUrl: "",
+        gscCode: "lm5CKxsWr0d1Xjv69MtylNAEFMb1JYVwEdgAHbRN1zs",
+        seoKeywords: "Trọng Văn Shop Acc, shop acc trọng văn, mua acc liên quân, shop acc blox fruits, shop acc free fire uy tín, 0346633408"
+      },
+      accounts: [
+        {
+          id: "a1",
+          title: "Acc Liên Quân VIP #01 - Full Tướng Skin SSS",
+          price: "450.000đ",
+          images: [
+            "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=95",
+            "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=95"
+          ],
+          desc: "Trắng thông tin 100% • Bấm mũi tên trên ảnh hoặc chạm vào ảnh để xem nhiều hình Full Screen nét căng.",
+          createdAt: Date.now()
+        },
+        {
+          id: "a2",
+          title: "Acc Blox Fruits #02 - Max Level + Kitsune Vĩnh Viễn",
+          price: "320.000đ",
+          images: [
+            "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=95"
+          ],
+          desc: "Giao dịch trực tiếp qua Zalo 0346633408 nhận tài khoản & mật khẩu sau 1 giây.",
+          createdAt: Date.now() - 1000
+        }
+      ],
+      reviews: [
+        {
+          id: "rv1",
+          name: "Hoàng Minh (097xxx)",
+          stars: 5,
+          comment: "Chủ shop Trọng Văn hỗ trợ cực kỳ nhiệt tình, xem được nhiều ảnh nét căng, mua phát nhận acc liền!",
+          approved: true
+        }
+      ]
+    };
+
+    let db = JSON.parse(JSON.stringify(DEFAULT_DB));
+    let slideIndexMap = {}; // Lưu vị trí ảnh hiện tại của từng Acc
+    let lbImages = [];
+    let lbCurrentIndex = 0;
+
+    function switchNav(tab) {
+      document.getElementById("nav-kho").classList.toggle("active", tab === "kho");
+      document.getElementById("nav-rev").classList.toggle("active", tab === "rev");
+    }
+
+    let introTimer = null;
+    function initIntro() {
+      const scr = document.getElementById("intro-screen");
+      const vid = document.getElementById("intro-video");
+      if (!scr) return;
+      try {
+        if (db.config && db.config.introVideoUrl && vid) {
+          vid.src = db.config.introVideoUrl;
+          vid.style.display = "block";
+          vid.play().catch(() => {});
+        }
+      } catch (e) {}
+      if (introTimer) clearTimeout(introTimer);
+      introTimer = setTimeout(() => {
+        scr.classList.add("hide");
+      }, 2800);
+    }
+
+    function safeGetStorage(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function safeSetStorage(key, val) {
+      try {
+        localStorage.setItem(key, val);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    async function loadData() {
+      // Khởi chạy màn hình Intro và hiển thị dữ liệu mặc định ngay lập tức để không bao giờ bị treo
+      const saved = safeGetStorage("TV_STORE_DB");
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          if (parsed && typeof parsed === "object") {
+            db = {
+              ...DEFAULT_DB,
+              ...parsed,
+              config: { ...DEFAULT_DB.config, ...(parsed.config || {}) },
+              accounts: Array.isArray(parsed.accounts) ? parsed.accounts : DEFAULT_DB.accounts,
+              reviews: Array.isArray(parsed.reviews) ? parsed.reviews : DEFAULT_DB.reviews
+            };
+          }
+        } catch (e) {}
+      }
+      renderAll();
+      initIntro();
+
+      // Đồng bộ file data.json từ server khi chạy trên tên miền web (http/https)
+      try {
+        if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+          const remoteUrl = new URL("data.json?t=" + Date.now(), window.location.href).href;
+          const r = await fetch(remoteUrl, { cache: "no-store" });
+          if (r.ok) {
+            const remoteDb = await r.json();
+            if (remoteDb && (!db.updatedAt || (remoteDb.updatedAt && remoteDb.updatedAt >= db.updatedAt))) {
+              db = {
+                ...DEFAULT_DB,
+                ...remoteDb,
+                config: { ...DEFAULT_DB.config, ...(remoteDb.config || {}) },
+                accounts: Array.isArray(remoteDb.accounts) ? remoteDb.accounts : DEFAULT_DB.accounts,
+                reviews: Array.isArray(remoteDb.reviews) ? remoteDb.reviews : DEFAULT_DB.reviews
+              };
+              safeSetStorage("TV_STORE_DB", JSON.stringify(db));
+              renderAll();
+            }
+          }
+        }
+      } catch (e) {}
+    }
+
+    // Chuẩn hóa danh sách ảnh (tương thích cả dữ liệu cũ 1 ảnh và dữ liệu mới nhiều ảnh)
+    function getAccImages(acc) {
+      if (Array.isArray(acc.images) && acc.images.length > 0) return acc.images;
+      if (acc.image) return [acc.image];
+      return ["https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=95"];
+    }
+
+    function renderAll() {
+      const c = { ...DEFAULT_DB.config, ...(db.config || {}) };
+      const zLink = `https://zalo.me/${c.zaloPhone.replace(/\s+/g, "")}`;
+
+      document.getElementById("intro-title-txt").innerText = c.shopName;
+      document.getElementById("header-name").innerText = c.shopName;
+      document.getElementById("banner-shop-name").innerText = c.shopName + " SHOP ACC";
+      document.getElementById("top-phone").innerText = c.zaloPhone;
+      document.getElementById("sub-phone").innerText = c.zaloPhone;
+
+      document.getElementById("top-zalo-btn").href = zLink;
+      document.getElementById("banner-zalo-btn").href = zLink;
+      document.getElementById("float-zalo").href = zLink;
+
+      // Cập nhật Google Search Console & SEO
+      if (c.gscCode) document.getElementById("meta-gsc").setAttribute("content", c.gscCode);
+      if (c.seoKeywords) document.getElementById("meta-keys").setAttribute("content", c.seoKeywords);
+      document.getElementById("page-title").innerText = `${c.shopName} SHOP ACC - Kho Acc Game Uy Tín & Giá Rẻ 24/7`;
+
+      const sorted = [...(db.accounts || [])].sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+      document.getElementById("acc-grid-box").innerHTML = sorted.map(item => {
+        const imgs = getAccImages(item);
+        const curIdx = slideIndexMap[item.id] || 0;
+        const safeIdx = curIdx < imgs.length ? curIdx : 0;
+        const currentImg = imgs[safeIdx];
+        const msg = encodeURIComponent(`Chào Trọng Văn, mình muốn mua [${item.title}] giá ${item.price}`);
+
+        return `
+          <div class="acc-item">
+            <div class="acc-thumb">
+              <span class="badge-new-acc">MỚI NHẤT</span>
+              <span class="badge-img-count">🖼️ ${safeIdx + 1}/${imgs.length} ảnh</span>
+              ${imgs.length > 1 ? `
+                <button class="slide-nav-btn prev" onclick="changeCardSlide('${item.id}', -1, event)">❮</button>
+                <button class="slide-nav-btn next" onclick="changeCardSlide('${item.id}', 1, event)">❯</button>
+              ` : ""}
+              <img src="${currentImg}" alt="${esc(item.title)}" onclick="openFullGallery('${item.id}', ${safeIdx})" />
+              <span class="badge-fullscreen">🔍 Chạm phóng to HD</span>
+            </div>
+            ${imgs.length > 1 ? `
+              <div class="acc-mini-thumbs">
+                ${imgs.map((u, idx) => `
+                  <img src="${u}" class="${idx === safeIdx ? 'active' : ''}" onclick="setCardSlide('${item.id}', ${idx})" alt="thumb" />
+                `).join("")}
+              </div>
+            ` : ""}
+            <div class="acc-info">
+              <div class="acc-name">${esc(item.title)}</div>
+              <div class="acc-detail">${esc(item.desc)}</div>
+              <div class="acc-foot">
+                <span class="acc-cost">${esc(item.price)}</span>
+                <a href="${zLink}?text=${msg}" target="_blank" class="btn-zalo-buy">⚡ Mua Qua Zalo</a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      const okRevs = (db.reviews || []).filter(x => x.approved);
+      document.getElementById("approved-reviews-box").innerHTML = okRevs.map(r => `
+        <div class="rev-card">
+          <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:3px;">
+            <strong>${esc(r.name)}</strong>
+            <span style="color:var(--amber-bright);">${"★".repeat(r.stars || 5)}</span>
+          </div>
+          <div style="font-size:0.8rem; color:var(--text-sub);">${esc(r.comment)}</div>
+        </div>
+      `).join("");
+
+      renderAdminLists();
+    }
+
+    function changeCardSlide(accId, step, ev) {
+      if (ev) ev.stopPropagation();
+      const acc = (db.accounts || []).find(x => x.id === accId);
+      if (!acc) return;
+      const imgs = getAccImages(acc);
+      const cur = slideIndexMap[accId] || 0;
+      slideIndexMap[accId] = (cur + step + imgs.length) % imgs.length;
+      renderAll();
+    }
+
+    function setCardSlide(accId, idx) {
+      slideIndexMap[accId] = idx;
+      renderAll();
+    }
+
+    function openFullGallery(accId, startIndex) {
+      const acc = (db.accounts || []).find(x => x.id === accId);
+      if (!acc) return;
+      lbImages = getAccImages(acc);
+      lbCurrentIndex = startIndex || 0;
+      updateLightboxView();
+      document.getElementById("lightbox-modal").classList.add("open");
+    }
+
+    function stepLightbox(step) {
+      if (!lbImages.length) return;
+      lbCurrentIndex = (lbCurrentIndex + step + lbImages.length) % lbImages.length;
+      updateLightboxView();
+    }
+
+    function updateLightboxView() {
+      document.getElementById("lightbox-target").src = lbImages[lbCurrentIndex];
+      document.getElementById("lightbox-counter").innerText = `${lbCurrentIndex + 1} / ${lbImages.length}`;
+    }
+
+    function closeFullImg() {
+      document.getElementById("lightbox-modal").classList.remove("open");
+    }
+
+    function sendReview() {
+      const name = document.getElementById("cus-name").value.trim();
+      const stars = Number(document.getElementById("cus-stars").value);
+      const comment = document.getElementById("cus-text").value.trim();
+      if (!name || !comment) return toast("⚠️ Vui lòng nhập tên và nội dung nhận xét!");
+      db.reviews.unshift({ id: "rv_" + Date.now(), name, stars, comment, approved: false });
+      saveAndAutoSync("✅ Đã gửi đánh giá! Chờ Admin Trọng Văn duyệt.");
+      document.getElementById("cus-name").value = "";
+      document.getElementById("cus-text").value = "";
+    }
+
+    // ================= QUẢN TRỊ VIÊN & TỰ ĐỘNG ĐỒNG BỘ GITHUB 1S =================
+    function autoDetectGithubRepo() {
+      const host = window.location.hostname;
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      let detected = "";
+      if (host.endsWith(".github.io")) {
+        const user = host.replace(".github.io", "");
+        const repoName = pathParts[0] || `${user}.github.io`;
+        detected = `${user}/${repoName}`;
+      }
+      if (detected) {
+        document.getElementById("gh-repo").value = detected;
+        saveGithubCreds();
+        toast("🔍 Đã tự nhận diện Repo: " + detected);
+      } else {
+        toast("ℹ️ Hãy nhập dạng username/ten-repo (VD: trongvan/shop-acc)");
+      }
+    }
+
+    function saveGithubCreds() {
+      const token = document.getElementById("gh-token").value.trim();
+      const repo = document.getElementById("gh-repo").value.trim();
+      safeSetStorage("TV_GH_TOKEN", JSON.stringify({ token, repo }));
+    }
+
+    function openAdmin() {
+      document.getElementById("adm-overlay").classList.add("open");
+      let g = {};
+      try {
+        g = JSON.parse(safeGetStorage("TV_GH_TOKEN") || "{}");
+      } catch (e) {}
+      document.getElementById("gh-token").value = g.token || "";
+      document.getElementById("gh-repo").value = g.repo || "";
+      if (!g.repo) autoDetectGithubRepo();
+    }
+
+    function closeAdmin() {
+      document.getElementById("adm-overlay").classList.remove("open");
+    }
+
+    // Hàm băm mật khẩu một chiều (không lưu mật khẩu dạng văn bản thuần trong code)
+    const DEFAULT_ADM_HASH = "aafc01713979a656";
+    function hashAdmPw(str) {
+      let h1 = (0xdeadbeef ^ str.length) >>> 0;
+      let h2 = (0x41c6ce57 ^ str.length) >>> 0;
+      for (let i = 0; i < str.length; i++) {
+        const ch = str.charCodeAt(i);
+        h1 = Math.imul(h1 ^ ch, 2654435761) >>> 0;
+        h2 = Math.imul(h2 ^ ch, 1597334677) >>> 0;
+      }
+      h1 = (Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909)) >>> 0;
+      h2 = (Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909)) >>> 0;
+      return h2.toString(16).padStart(8, "0") + h1.toString(16).padStart(8, "0");
+    }
+
+    function getActiveAdmHash() {
+      const localHash = safeGetStorage("TV_ADM_HASH");
+      if (localHash) return localHash;
+      if (db.config && db.config.adminPassHash) return db.config.adminPassHash;
+      return DEFAULT_ADM_HASH;
+    }
+
+    function verifyAdmin() {
+      const inputPw = document.getElementById("adm-pw").value.trim();
+      if (!inputPw) return toast("⚠️ Vui lòng nhập mật khẩu Admin!");
+      if (hashAdmPw(inputPw) === getActiveAdmHash()) {
+        document.getElementById("adm-pw").value = "";
+        document.getElementById("adm-login-step").style.display = "none";
+        document.getElementById("adm-main-step").style.display = "block";
+        document.getElementById("adm-cfg-name").value = db.config.shopName || "TRỌNG VĂN";
+        document.getElementById("adm-cfg-phone").value = db.config.zaloPhone || "0346633408";
+        document.getElementById("adm-cfg-video").value = db.config.introVideoUrl || "";
+        document.getElementById("adm-cfg-gsc").value = db.config.gscCode || "lm5CKxsWr0d1Xjv69MtylNAEFMb1JYVwEdgAHbRN1zs";
+        document.getElementById("adm-cfg-seo").value = db.config.seoKeywords || "";
+        renderAdminLists();
+        toast("👑 Chào Chủ Shop Trọng Văn (0346633408)!");
+      } else {
+        toast("❌ Mật khẩu Admin không đúng!");
+      }
+    }
+
+    function logoutAdmin() {
+      document.getElementById("adm-pw").value = "";
+      document.getElementById("adm-main-step").style.display = "none";
+      document.getElementById("adm-login-step").style.display = "block";
+      closeAdmin();
+      toast("🔒 Đã khóa bảng Quản Trị Admin!");
+    }
+
+    async function changeAdminPassword() {
+      const newPw = document.getElementById("adm-new-pw").value.trim();
+      const confirmPw = document.getElementById("adm-confirm-pw").value.trim();
+      if (!newPw) return toast("⚠️ Vui lòng nhập mật khẩu Admin mới!");
+      if (newPw.length < 4) return toast("⚠️ Mật khẩu mới phải có ít nhất 4 ký tự!");
+      if (newPw !== confirmPw) return toast("❌ Mật khẩu xác nhận không khớp!");
+
+      const newHash = hashAdmPw(newPw);
+      safeSetStorage("TV_ADM_HASH", newHash);
+      db.config = {
+        ...(db.config || {}),
+        adminPassHash: newHash
+      };
+      document.getElementById("adm-new-pw").value = "";
+      document.getElementById("adm-confirm-pw").value = "";
+      await saveAndAutoSync("✅ Đã đổi mật khẩu Admin mới thành công!");
+    }
+
+    function renderAdminLists() {
+      const rBox = document.getElementById("adm-rev-list");
+      if (rBox) {
+        rBox.innerHTML = (db.reviews || []).map(r => `
+          <div class="rev-card" style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:0.76rem;">
+              <strong>${esc(r.name)}</strong> (${r.approved ? '<span style="color:#34d399;">Đã duyệt</span>' : '<span style="color:#fbbf24;">Chờ duyệt</span>'})
+              <div style="color:var(--text-sub);">${esc(r.comment)}</div>
+            </div>
+            <div style="display:flex; gap:5px;">
+              ${!r.approved ? `<button class="btn-adm-open" onclick="approveRv('${r.id}')">Duyệt</button>` : ''}
+              <button class="btn-adm-open" style="border-color:#ef4444; color:#ef4444;" onclick="delRv('${r.id}')">Xóa</button>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      const aBox = document.getElementById("adm-acc-list");
+      if (aBox) {
+        aBox.innerHTML = (db.accounts || []).map(a => {
+          const count = getAccImages(a).length;
+          return `
+            <div class="rev-card" style="display:flex; justify-content:space-between; align-items:center;">
+              <div style="font-size:0.76rem;">
+                <strong>${esc(a.title)}</strong> (${count} ảnh) - <span style="color:var(--amber-bright);">${esc(a.price)}</span>
+              </div>
+              <button class="btn-adm-open" style="border-color:#ef4444; color:#ef4444;" onclick="delAcc('${a.id}')">Xóa</button>
+            </div>
+          `;
+        }).join("");
+      }
+    }
+
+    function toBase64File(file) {
+      return new Promise((res, rej) => {
+        const rd = new FileReader();
+        rd.onload = () => res(rd.result);
+        rd.onerror = rej;
+        rd.readAsDataURL(file);
+      });
+    }
+
+    async function previewSelectedImages(input) {
+      const box = document.getElementById("adm-img-preview");
+      box.innerHTML = "";
+      if (!input.files || !input.files.length) return;
+      for (const file of input.files) {
+        const b64 = await toBase64File(file);
+        const im = document.createElement("img");
+        im.src = b64;
+        box.appendChild(im);
+      }
+    }
+
+    async function createAcc() {
+      const title = document.getElementById("adm-acc-name").value.trim();
+      const price = document.getElementById("adm-acc-price").value.trim();
+      const desc = document.getElementById("adm-acc-desc").value.trim();
+      const f = document.getElementById("adm-acc-file");
+      const u = document.getElementById("adm-acc-url").value.trim();
+      if (!title || !price) return toast("⚠️ Vui lòng nhập đủ Tên Acc và Giá bán!");
+
+      let images = [];
+      if (f.files && f.files.length > 0) {
+        for (const file of f.files) {
+          const b64 = await toBase64File(file);
+          images.push(b64);
+        }
+      }
+      if (u) {
+        const urlList = u.split(",").map(s => s.trim()).filter(Boolean);
+        images.push(...urlList);
+      }
+
+      if (images.length === 0) return toast("⚠️ Hãy chọn ít nhất 1 ảnh từ tệp hoặc dán Link ảnh!");
+
+      db.accounts.unshift({
+        id: "acc_" + Date.now(),
+        title,
+        price,
+        images,
+        image: images[0],
+        desc: desc || "Liên hệ Zalo Trọng Văn 0346633408 để nhận tài khoản ngay.",
+        createdAt: Date.now()
+      });
+
+      document.getElementById("adm-acc-name").value = "";
+      document.getElementById("adm-acc-price").value = "";
+      document.getElementById("adm-acc-desc").value = "";
+      document.getElementById("adm-acc-url").value = "";
+      document.getElementById("adm-img-preview").innerHTML = "";
+      f.value = "";
+
+      await saveAndAutoSync(`✅ Đã đăng Acc mới (${images.length} ảnh) & đồng bộ lên web!`);
+    }
+
+    function approveRv(id) {
+      const r = db.reviews.find(x => x.id === id);
+      if (r) r.approved = true;
+      saveAndAutoSync("✅ Đã duyệt đánh giá công khai lên web!");
+    }
+
+    function delRv(id) {
+      db.reviews = (db.reviews || []).filter(x => x.id !== id);
+      saveAndAutoSync("🗑️ Đã xóa đánh giá!");
+    }
+
+    function delAcc(id) {
+      db.accounts = (db.accounts || []).filter(x => x.id !== id);
+      delete slideIndexMap[id];
+      saveAndAutoSync("🗑️ Đã xóa Acc khỏi kho!");
+    }
+
+    async function updateShopCfg() {
+      const shopName = document.getElementById("adm-cfg-name").value.trim() || "TRỌNG VĂN";
+      const zaloPhone = document.getElementById("adm-cfg-phone").value.trim() || "0346633408";
+      const videoFileInput = document.getElementById("adm-cfg-video-file");
+      let introVideoUrl = document.getElementById("adm-cfg-video").value.trim();
+      const gscCode = document.getElementById("adm-cfg-gsc").value.trim();
+      const seoKeywords = document.getElementById("adm-cfg-seo").value.trim();
+
+      if (videoFileInput && videoFileInput.files && videoFileInput.files[0]) {
+        try {
+          introVideoUrl = await toBase64File(videoFileInput.files[0]);
+          document.getElementById("adm-cfg-video").value = introVideoUrl;
+        } catch (e) {}
+      }
+
+      db.config = {
+        ...db.config,
+        shopName,
+        zaloPhone,
+        introVideoUrl,
+        gscCode,
+        seoKeywords
+      };
+
+      await saveAndAutoSync("💾 Đã lưu cài đặt Shop & cập nhật SEO!");
+    }
+
+    async function saveAndAutoSync(msg) {
+      db.updatedAt = Date.now();
+      safeSetStorage("TV_STORE_DB", JSON.stringify(db));
+      renderAll();
+      if (msg) toast(msg);
+      await pushGitHub(true);
+    }
+
+    function utf8ToBase64(str) {
+      return btoa(unescape(encodeURIComponent(str)));
+    }
+
+    async function pushGitHub(isSilent) {
+      saveGithubCreds();
+      let g = {};
+      try {
+        g = JSON.parse(safeGetStorage("TV_GH_TOKEN") || "{}");
+      } catch (e) {}
+      const token = (g.token || "").trim();
+      const repo = (g.repo || "").trim();
+      const statusEl = document.getElementById("sync-status-line");
+
+      if (!token || !repo) {
+        if (!isSilent) {
+          toast("⚠️ Vui lòng nhập Mã GitHub Token và Tên Repository (username/ten-repo) để đồng bộ!");
+        }
+        return;
+      }
+
+      try {
+        if (statusEl) statusEl.innerText = "⏳ Đang đồng bộ dữ liệu lên GitHub...";
+        const apiUrl = `https://api.github.com/repos/${repo}/contents/data.json`;
+        const headers = {
+          "Authorization": `token ${token}`,
+          "Accept": "application/vnd.github.v3+json",
+          "Content-Type": "application/json"
+        };
+
+        let sha = undefined;
+        const getRes = await fetch(apiUrl, { headers, cache: "no-store" });
+        if (getRes.ok) {
+          const fileData = await getRes.json();
+          sha = fileData.sha;
+        }
+
+        db.updatedAt = Date.now();
+        const contentB64 = utf8ToBase64(JSON.stringify(db, null, 2));
+        const bodyObj = {
+          message: `Cập nhật kho acc Trọng Văn Shop (${new Date().toLocaleString("vi-VN")})`,
+          content: contentB64
+        };
+        if (sha) bodyObj.sha = sha;
+
+        const putRes = await fetch(apiUrl, {
+          method: "PUT",
+          headers,
+          body: JSON.stringify(bodyObj)
+        });
+
+        if (putRes.ok) {
+          if (statusEl) statusEl.innerText = "✅ Đã đồng bộ lên GitHub thành công! Mọi người vào web đều thấy ngay.";
+          if (!isSilent) toast("🚀 Đã đồng bộ dữ liệu lên GitHub thành công!");
+        } else {
+          const errData = await putRes.json().catch(() => ({}));
+          if (statusEl) statusEl.innerText = "❌ Lỗi đồng bộ GitHub: " + (errData.message || putRes.status);
+          if (!isSilent) toast("❌ Lỗi đẩy GitHub: " + (errData.message || putRes.status));
+        }
+      } catch (err) {
+        if (statusEl) statusEl.innerText = "❌ Không thể kết nối GitHub API. Đã lưu trên trình duyệt.";
+        if (!isSilent) toast("❌ Lỗi kết nối tới GitHub API!");
+      }
+    }
+
+    let toastTimeout = null;
+    function toast(msg) {
+      const box = document.getElementById("msg-toast");
+      if (!box) return;
+      box.innerText = msg;
+      box.style.display = "block";
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        box.style.display = "none";
+      }, 3200);
+    }
+
+    function esc(str) {
+      if (str === null || str === undefined) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    // Khởi chạy ứng dụng ngay khi tải trang và đảm bảo tắt màn hình chờ sau 3 giây
+    window.addEventListener("DOMContentLoaded", () => {
+      loadData();
+    });
+    loadData();
+  </script>
+</body>
+</html>
